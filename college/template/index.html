@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my page</title>
+</head>
+<body style = "background-color:rgb(0, 200, 1000);">
+    <h1>CALCULATOR</h1>
+    <form action="{% url 'index' %}" method="POST">
+        {%csrf_token %}   <!--jinja pattern--> 
+        <input style = "background-color:lightgreen;"type="text" placeholder="Number1"name="num1"><br><br>
+        <!--<input type="text" value="999"name="num1">-->
+        <input style = "background-color:lightgreen;"type="submit"  value="submit">
+    
+</body>
+</html>
