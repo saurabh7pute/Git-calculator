@@ -1,4 +1,5 @@
 
+
 from django.urls import path,include
 from . import views
 
@@ -15,4 +16,8 @@ urlpatterns = [
     path('add_service',views.ser,name='ser'),
     path('del_service/<int:id>',views.del_ser,name='del_ser'),
     path('add_ser',views.add_ser,name='add_ser'),
+    path('add_skil000l',views.skills,name='skills'),
+    path('del_skill/<int:id>',views.del_skill,name='del_skill'),
+    path('add_sk',views.add_skill,name='add_skill'),
+
 ]
